@@ -1,0 +1,10 @@
+<!doctype html>
+<body style="font-family:sans-serif;padding:2rem">
+<h2>Callback OLX</h2>
+<pre id="out"></pre>
+<script>
+  const p = new URLSearchParams(location.search);
+  document.getElementById("out").textContent =
+    p.get("code") ? "CODE:\n" + p.get("code") : "Sem code na URL:\n" + location.search;
+</script>
+</body>
